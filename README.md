@@ -1,4 +1,4 @@
-# beem
+# ThinkTech
 
 ## Project setup
 ```
