@@ -1,0 +1,318 @@
+:root {
+    --white: #fff;
+    --dark: #000;
+    --colored-featured-bg: #f7f7f7;
+    --featured-postcard: #727377;
+    --light-grey: #eee;
+}
+
+.slick-dots li button:before {
+    color: var(--dark) !important;
+}
+
+.tox-tinymce {
+    border-radius: .25rem !important;
+    -webkit-border-radius: .25rem !important;
+    -moz-border-radius: .25rem !important;
+    -ms-border-radius: .25rem !important;
+    -o-border-radius: .25rem !important;
+}
+
+a {
+    color: var(--dark);
+}
+
+a:hover {
+    color: var(--dark) !important;
+}
+
+html {
+    transition: color 300ms, background-color 300ms;
+}
+
+html[theme='dark-mode'] {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+html[theme='dark-mode'] img {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+body {
+    color: var(--dark) !important;
+    background: var(--white) !important;
+    line-height: 1.5rem;
+}
+
+#main-wrapper {
+    min-height: calc(100vh - 125px);
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.vs-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.main-content {
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+.postcard-container .postcard-text-div {
+    padding: 2rem;
+}
+
+.postcard-container .postcard-img {
+    border-radius: .25rem;
+    width: 100%;
+    object-fit: cover;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+}
+
+.post-title {
+    font-size: 32px;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.postcard-header {
+    font-size: 24px;
+    color: var(--dark);
+}
+
+.postcard-header::first-letter {
+    text-transform: uppercase;
+}
+
+.postcard-container .postcard-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: var(--dark);
+}
+
+.postcard-container .postcard-author {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.postcard-author-div {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 1rem 0;
+    color: var(--dark);
+}
+
+.postcard-author-div h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.postcard-container .postcard-author-img {
+    margin-right: .5rem;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.postcard-time {
+    display: flex;
+    max-width: 200px;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: 12px;
+    color: var(--featured-postcard);
+}
+
+.postcard-time span {
+    margin: 0 .25rem;
+}
+
+.postcard-mini {
+    font-size: 15px;
+    color: var(--featured-postcard);
+}
+
+.subscribe-btn-div {
+    position: fixed;
+    bottom: 1.8rem;
+    right: 1.8rem;
+}
+
+.subscribe-btn-div button {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    background: rgb(20, 21, 38);
+    color: var(--white);
+    border: none;
+    padding: 1.2rem 1.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    box-shadow: 0 10px 10px rgba(20, 21, 38, .25);
+}
+
+.loadmore-div {
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.loadmore-div button {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border: 1px solid var(--dark);
+    color: var(--dark);
+}
+
+.single-article .postcard-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.post-share {
+    display: flex;
+}
+
+.single-article-author-div {
+    margin: 0 auto;
+}
+
+.single-article-author-content {
+    text-align: center;
+}
+
+.single-article-author-content img {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.single-article-author span {
+    font-size: 11px;
+}
+
+.single-article .postcard-tag {
+    padding: .5rem;
+    width: fit-content;
+    border: 1px solid var(--dark);
+}
+
+.post-inner {
+    margin: 0 auto;
+    max-width: 920px;
+    line-height: 1.6rem;
+    padding: 0 .25rem;
+}
+
+.post-article {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.post-article p {
+    margin-bottom: 1rem;
+}
+
+.post-article h3 {
+    font-size: 24px;
+    margin: 2rem 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .articles-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
+    .articles-div .postcard-img-div {
+        min-height: 300px;
+    }
+    .articles-div .postcard:last-child {
+        grid-column: 1/3;
+    }
+    .articles-div .postcard:last-child img {
+        width: 100%;
+        height: auto;
+    }
+    .postcard {
+        height: 100%;
+        height: -webkit-fill-available;
+    }
+    .post-inner {
+        padding: 0 120px;
+    }
+    .single-article-author-content {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-links {
+        display: block;
+        white-space: nowrap;
+        justify-self: center;
+    }
+    .footer-container a {
+        margin: 0 .25rem;
+    }
+    .footer-sm {
+        justify-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .articles-div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .articles-div .postcard:last-child {
+        grid-column: auto;
+    }
+    .post-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .post-header .postcard-img-div {
+        grid-column: 1/2;
+    }
+    .post-header .post-meta {
+        grid-row: 1;
+        grid-column: 2/4;
+    }
+}
