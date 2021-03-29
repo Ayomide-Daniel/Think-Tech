@@ -5,7 +5,7 @@
  */
 import axios from 'axios';
 let Api = axios.create({
-    baseURL: 'http://https://1dd3b4ce6307.ngrok.io/beem_blog/api'
+    baseURL: 'https://0dfb1ab1dcfe.ngrok.io/beem_blog/api'
 });
 Api.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 Api.defaults.withCredentials = true;
