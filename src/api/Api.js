@@ -8,5 +8,5 @@ let Api = axios.create({
     baseURL: 'https://0dfb1ab1dcfe.ngrok.io/beem_blog/api'
 });
 Api.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-// Api.defaults.withCredentials = true;
+Api.defaults.withCredentials = true;
 export default Api;
